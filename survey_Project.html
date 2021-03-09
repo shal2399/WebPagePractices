@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<!-- <style type="text/css">
+		body{
+			padding:0;
+			margin:0;
+			background-color:#0be881;
+			font-family:monospace;
+		}
+		#title{
+			font-size:35px;
+		}
+		#description{
+			font-size: 15px;
+		}
+        #container{
+        	padding: 10px;
+        	border-radius: 10px;
+        	position:relative;
+        	background-color: #fff;
+        	margin:2px auto;
+        	width:90%;
+        	height: auto;
+        }
+        #survey-form{
+        	display:flex;
+        }
+        #left,#right{
+            width: 50%;
+        }
+        .left{
+        	display: flex;
+            justify-content: flex-end;
+            padding:6px;
+            margin:11px;
+        }
+        .right{
+        	display: flex;
+            justify-content: flex-start;
+            padding:6px;
+            margin: 8px;
+        }
+        .sp1{
+        	position: relative;
+        	padding-top:27px;
+        }
+        .sp2{
+        	padding-top: 40px;
+        }
+        .sp3{
+        	padding-top: 10px;
+        }
+         .r1,.r2,.r3,.c1,.c2{
+         	display: inline-flex;
+         }
+        #submit{
+        	cursor: cell;
+        	padding: 10px 15px;
+        	background-color: #d63031;
+        	border-radius: 5px;
+        	font-size: 15px;
+        }
+        @media screen and (max-width:400){
+             #dropdown{
+             	padding-bottom: 40px;
+             }
+        }
+	</style> -->
+</head>
+<body>
+     <center><h1 id="title">Survey Form</h1></center>
+     <div id="container">
+     	<center><p id="description">Let us know how we can improve freeCodeCamp</p></center>
+     	<form id="survey-form" target="_blank">
+     		<!-- <div id="left">
+     			<label class="left" id="name-label">*Name:</label>
+     			<label class="left" id="email-label">*Password:</label>
+                <label class="left" id="number-label">*Age:</label>
+                <label class="left sp1">Which option best describes your current role?</label>
+                <label class="left" >*How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <label class="left sp2" >Things that should be improved in the future
+                                                            (Check all that apply): ?</label>
+                <label class="left sp3">Any Comments or Suggestions?</label>
+
+     		</div> -->
+     		<div id="right">
+     			<input class="right" type="text" name="name" id="name" placeholder="John Wick" required/>
+     			<input class="right" type="email" name="email" id="email" placeholder="johnwick@gmail.com"required/>
+     			<input type="number" class="right" id="number" name="age" placeholder="32" min="1" max="100"required/>
+     			​<select id="dropdown" name="possession" class="right">
+                     <option value="volvo">Student</option>
+                     <option value="saab">Full Time Job</option>
+                     <option value="fiat">Full Time Learner</option>
+                     <option value="audi">Prefer Not To Say</option>
+                </select>
+                <input class="right r1" type="radio" name="radio"><label class="r1">Definitely</label>
+                <br>
+                <input class="right r2" type="radio" name="radio"><label class="r2">Maybe</label>
+                <br>
+                <input class="right r3" type="radio" name="radio"><label class="r3">Not Sure</label>
+                <br>
+                <input class="right c1" type="checkbox" name="box1" value="Front-end-Projects"><label class="c1">Front-end Projects</label>
+                <br>
+                <input class="right c2" type="checkbox" name="box2" value="Back-end-Projects"><label class="c2">Back-end Projects</label>
+                <br>
+               <textarea cols="30" rows="5" class="right"></textarea>
+               <input class="right" type="submit" name="submit" id="submit" value="Submit">
+     		</div>
+
+     	</form>
+     </div>
+</body>
+</html>

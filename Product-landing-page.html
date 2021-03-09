@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Landing Page</title>
+	<style type="text/css">
+		body{
+			padding:0;
+			margin:0;
+		}
+		#header{
+			position: fixed;
+            width:100%;
+            height: 20px;
+            padding: 10px;
+            display: inline-flex;
+            padding-left: 60px;
+			z-index: 999;
+		}
+		.organisation{
+			display: flex;
+			width: 50%;
+			padding: 0;
+			margin:0;
+			flex-direction: left;
+		}
+		#header-img{
+			height: 20px;
+			width: auto;
+			padding-left:10px;
+			padding-right: 10px;
+			margin: 0;
+		}
+		#nav-bar{
+			display: flex;
+			width: 50%;
+			padding: 0;
+			margin:0;
+			flex-direction: right;
+			margin-left: 50px;
+		}
+		.organisation p{
+			padding-bottom: 5px;
+			font-size: 25px;
+			font-family: monospace;
+			margin-top: -5px;
+		}
+		#nav-bar a{
+			text-decoration: none;
+			margin-right: 80px;
+			margin-bottom: -10px;
+			padding:5px;
+			color: black;
+			font-size: 15px;
+			font-family: monospace;
+			font-weight: bold;
+		}
+		#nav-bar a:hover{
+			background:black;
+			color:white;
+			border-radius: 10px;
+		}
+		#email{
+			width: 200px;
+			height: 30px;
+			margin-bottom: 20px;
+			outline: none;
+			border:2px solid #f1c40f;
+			border-radius: 10px;
+			transition: .5s;
+		}
+		#email:focus{
+              width: 250px;
+		}
+		#email::placeholder{
+			text-align: center;
+			color: rgbs(0,0,0,.5);
+			font-size: 15px;
+		}
+		#form #submit{
+			border-width: 0;
+			width: 150px;
+			height: 30px;
+			background-color: #f1c40f;
+			color: black;
+			font-family: monospace;
+			font-size: 15px;
+			border-radius: 15px;
+			transition: .5s;
+			margin-bottom: 10px;
+		}
+		#form #submit:hover{
+			width: 170px;
+			height: 35px;
+			margin-bottom: 5px;
+			color: white;
+		}
+		hr{
+			width: 90%;
+		}
+		#features{
+			padding-top: 80px;
+		}
+		.feature-elemets{
+            margin-top: 20px;
+			padding: 5px;
+			width:100%;
+			height: auto;
+			display: flex;
+		}
+		.left{
+			width: 50%;
+		}
+		.left img{
+			position: relative;
+             width: 70px;
+             height: auto; 
+             left: 90%;
+		}
+		.right{
+			width: 50%;
+			margin-left: 40px;
+			margin-right: 80px;
+			padding-right: 150px;
+		}
+		#pricing{
+			
+			display: flex;
+            justify-content: center;
+			padding: 30px 10%;
+
+		}
+		.box{
+			display: flex;
+			flex-flow: column;
+			width: 30%;
+			height: auto;
+			border: 1px solid black;
+			margin-left: 10px;
+			margin-right: 10px;
+			padding-bottom: 10px;
+		}
+		.box h2{
+			color: #f1c40f;
+			display: flex;
+			justify-content: center;
+			text-decoration: underline;
+			font-family: monospace;
+			font-size: 20px;
+		}
+		.box-content{
+			position: relative;
+			left: 50%;
+            transform: translateX(-45%);
+			width: 90%;
+			height: auto;
+		}
+		@media only screen and (max-width:1024px){
+			#header{
+				display: flex;
+				flex-flow: column;
+			}
+			.organisation{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				padding-left: -30px;
+				margin-left: -50px;
+			}
+			#nav-bar{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				background-color: #f1c40f;
+				color: black;
+                left: 0;
+				margin-left:-60px; 
+				margin-top: -25px;
+				padding-left: 7%;
+				padding-bottom: 15px;
+
+			}
+			
+		}
+
+	</style>
+</head>
+<body>
+    <header id="header" >
+    	<div class="organisation">
+    		<img id="header-img" src="http://pngimg.com/uploads/trombone/trombone_PNG21.png">
+    		<p>Original Trombones</p>
+    	</div>
+    	<nav id="nav-bar">
+    		<a class="nav-link" href="#features">Features</a>
+    		<a class="nav-link" href="#how_works">How It Works</a>
+    		<a class="nav-link" href="#pricing">Pricing</a>
+		</nav>
+	</header>
+	<main>
+		
+	<br><br>
+	<hr>
+    <br><br>
+    
+    	<center>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" target="https://www.freecodecamp.com/email-submit">
+    	<h2>Handcrafted, home-made masterpieces</h2>
+    	<input id="email" type="email" name="email" placeholder="Enter Your Email Address" required><br>
+    	<input type="submit" id="submit" value="Get Started">
+    </form>
+    </center>
+    
+    <section id="features">
+    	<div class="feature-elemets">
+    		<div class="left"><img src="https://cdn3.iconfinder.com/data/icons/vote/16/burning_fire_hot-512.png"></div>
+    		<div class="right" id="fe-1">
+    			<h1 >Premium Materials</h1>
+    			<p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+    		</div>
+    	</div>
+    	<div class="feature-elemets">
+    		<div class="left"><img src="https://image.flaticon.com/icons/png/512/45/45880.png"></div>
+    		<div class="right">
+    			<h1>Fast Shipping</h1>
+    			<p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+    		</div>
+    	</div>
+    	<div class="feature-elemets">
+    		<div class="left"><img src="https://cdn4.iconfinder.com/data/icons/social-productivity-line-art-5/128/battery-full-512.png"></div>
+    		<div class="right">
+    			<h1>Quality Assurance</h1>
+    			<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
+    		</div>
+    	</div>
+	</section>
+	<section id="how_works">
+		<br><br>
+		<center>
+				<iframe id="video" width="853" height="480" src="https://www.youtube.com/embed/z-Yj_jLNKKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </center>
+	</section>
+	<section id="pricing">
+		<div class="box">
+			  <h2>Tenor Trombone</h2>
+			  <div class="box-content">
+				  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio minima voluptatem earum tempore nobis quibusdam fugiat nemo necessitatibus tempora soluta repudiandae optio repellendus ducimus facere est, corrupti vel obcaecati neque!
+			  </div>
+			  
+		</div>
+		<div class="box">
+			  <h2>Bass Trombone</h2>
+			  <div class="box-content">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio minima voluptatem earum tempore nobis quibusdam fugiat nemo necessitatibus tempora soluta repudiandae optio repellendus ducimus facere est, corrupti vel obcaecati neque!
+				</div>
+		</div>
+		<div class="box">
+			  <h2>Valve Trombone</h2>
+			  <div class="box-content">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio minima voluptatem earum tempore nobis quibusdam fugiat nemo necessitatibus tempora soluta repudiandae optio repellendus ducimus facere est, corrupti vel obcaecati neque!
+				</div>
+		</div>	
+	</section>
+<center><a href="https://pngtree.com/free-vectors">free vectors from pngtree.com</a></center>   
+	</main>
+</body>
+</html>
